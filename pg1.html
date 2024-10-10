@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2>JS CLASS</h2>
+        <p>How to use clases in java script</p>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <script>
+            class student{
+                constructor(name,year){
+                    this.name=name
+                    this.year=year
+                }
+                age(){
+                    let date=new Date()
+                    return date.getFullYear()-this.year;
+
+                }
+
+            }
+            student1=new student("Mahnoor",2012);
+            document.getElementById("student1").innerHTML=
+            "my name is " +student1.name+ "  I am born in " +student1.year+ "  And my age is " +student1.age()
+student2=new student("Noor",2007);
+document.getElementById("student2").innerHTML=
+"my name is " +student2.name+ " I am born in " +student2.year+ " And my age is " +student2.age()
+        </script>
+    </body>
+</html>

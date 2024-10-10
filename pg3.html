@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h2>Static in JS</h2>
+        <p id="Hi"></p>
+        <p id="HELLO"></p>
+        <script>
+            class student{
+                constructor(name){
+                    this.studentname=name
+                }
+                static HELLO(){
+                    return" HELLO"
+                }
+Hi(){
+    return"Hi"+this.studentname
+}
+            }
+let student1=new student ( " John")
+document.getElementById("Hi").innerHTML=student1.Hi()
+document.getElementById("HELLO").innerHTML=student.HELLO()
+        </script>
+    </body>
+</html>
